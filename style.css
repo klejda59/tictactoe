@@ -1,0 +1,43 @@
+/* css reset */
+* *::before *::after {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 0.5rem;
+    justify-content: center;
+
+}
+
+#gameboard div {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 0.5rem 1rem;
+}

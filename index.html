@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <title>Tic tac toe game</title>
+</head>
+<body>
+    <h1>Play Tic-Tac-Toe</h1>
+
+    <div id="player-info">
+        <label for="in-player-one">Player 1 name:</label>
+        <input type="text" id="in-player-one"  placeholder="Player 1" required>
+
+        <label for="in-player-two">Player 2 name:</label>
+        <input type="text" name="" id="in-player-two" placeholder="Player 2" required>
+        <button id="btn-start">Start Game</button>
+    </div>
+
+    <p id="current-player"></p>
+    <div id="gameboard"></div>
+    <button id="btn-another-round" class="hidden">Play Another Round</button>
+    <button id="btn-reset-game">Reset Game</button>
+
+    <div id="game-status" class="hidden"></div>
+    <div id="scoreoard">
+        <p id="score-player-one">Player 1 wins: 0</p>
+        <p id="score-player-two">Player 2 wins: 0</p>
+        <p id="score-draws">Draws: 0</p>
+    </div>
+</body>
+</html>
